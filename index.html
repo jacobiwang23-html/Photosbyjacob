@@ -119,11 +119,19 @@
       gap: 28px;
     }
 
-  .gallery-item img {
-  width: 100%;
-  height: auto;
+ /* Make every gallery tile the same shape */
+.gallery-item {
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
 }
 
+/* Make the image fill the tile */
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
 
 
