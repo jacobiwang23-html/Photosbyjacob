@@ -136,8 +136,11 @@
 
 
 .gallery-item.wide {
-  grid-column: 1 / -1; /* this makes it stretch across all columns */
+  grid-column: 1 / -1;
+  aspect-ratio: 16 / 9;   /* wide banner shape */
+  max-height: 520px;      /* optional, prevents it from getting too tall */
 }
+
 
 .gallery-item.two-up {
   grid-column: 1 / -1; /* use the full row */
